@@ -1,0 +1,33 @@
+<body>
+  <div class="watch-list">
+    <div style="padding: 10px;">
+      <h1 [style.display]="watchlist.length==0 || isMobile ? 'none' : 'block'">My Watchlist</h1>
+      <h2 [style.display]="watchlist.length==0 || !isMobile ? 'none' : 'block'" style="text-align: center;font-size: 30px">My Watchlist</h2>
+
+
+      <div *ngIf="!isMobile">
+        <div class="row flex-row flex-nowrap" *ngFor="let group of mediaGroups" style="margin: 40px 0;">
+          <div class="col-2" *ngFor="let media of group" style="margin: 0">
+            <div class="ml-auto">
+              <app-media-card [isMobile]="isMobile" [media]=media>
+              </app-media-card>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div *ngIf="isMobile">
+        <div class="row flex-row flex-nowrap" *ngFor="let group of mediaGroupsMobile" style="align-items: center; justify-content: center; margin-top: 40px; width: 80%">
+          <div class="col" *ngFor="let media of group">
+            <app-media-card [isMobile]="isMobile" [media]=media>
+            </app-media-card>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <h2 [style.display]="watchlist.length==0 ? 'block' : 'none'"
+        style="text-align: center; margin-top: 2%;font-size: 33px"> No items found in Watchlist </h2>
+ </div>
+</body>

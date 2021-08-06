@@ -1,0 +1,149 @@
+* {
+  outline: none;
+}
+
+::placeholder {
+  color: #6c7887;
+}
+
+div.my-navbar {
+  display: inline-block;
+  font-family: "Helvetica Neue";
+  background-color: #010d2e;
+  color: white;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.web{
+  float: left;
+  margin-left: 40px;
+  /*line-height: 100%;*/
+  /*text-align: center;*/
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  color: #6c7887;
+}
+
+a:hover {
+  color: #a6c0e0;
+}
+
+a:focus {
+  color: #d8deed;
+}
+
+a.title {
+  float: left;
+  display: inline-block;
+  color: #d8deed;
+  font-size: 24px;
+  margin-left: 55px;
+}
+
+a.title:hover {
+  color: #d8deed;
+}
+
+a.title:focus {
+  color: #d8deed;
+}
+
+
+div.search {
+  width: 230px;
+  margin-right: 10%;
+  height: 60px;
+  margin-left: 55px;
+}
+
+input {
+  border-radius: 0;
+  margin-right: 20px;
+  width: 230px;
+  height: 40px;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 2px solid #d8deed;
+  color: #d8deed;
+  background-color: #010d2e;
+  outline: none;
+}
+
+textarea:focus, input:focus {
+  border: none;
+  border-bottom: 2px solid #d8deed;
+  color: #d8deed;
+  background-color: #010d2e;
+  outline: none;
+  box-shadow: 0 0 0 0;
+}
+
+::ng-deep .dropdown-menu.show {
+  color: #d8deed;
+  background-color: #040f38;
+  border: 1px solid gray;
+
+}
+
+::ng-deep .dropdown-menu.show button {
+  padding: 4px 7px;
+}
+
+ngb-highlight {
+  margin-left: 10px;
+}
+
+::ng-deep .dropdown-item {
+  color: #d8deed;
+}
+
+
+.fa.fa-bars {
+  color: #6c7887;
+  font-size: 20px;
+  position: absolute;
+  right: 50px;
+  top: 5px;
+  width: 40px;
+  height: 30px;
+  border: 1px solid #2f3052;
+  text-align: center;
+  background-color: #010d2e;
+  border-radius: 1px;
+  /*-moz-outline-radius: 1px;*/
+}
+
+div.mobile {
+  display: block;
+  width: 85%;
+  text-align: right;
+  font-size: 15px;
+  height: 30px;
+  line-height: 30px;
+
+}
+
+.mobile a{
+  color: #6c7887;
+}
+
+.mobile a:hover {
+  color: white;
+}
+
+/*.fa.fa-bars:active {*/
+/*  box-shadow:*/
+/*    0 0 0 1px orange,*/
+/*    0 0 0 2px white;*/
+/*}*/
+
+/*.fa.fa-bars:focus {*/
+/*  box-shadow:*/
+/*    0 0 0 1px orange,*/
+/*    0 0 0 2px white;*/
+/*}*/

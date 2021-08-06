@@ -1,0 +1,63 @@
+* {
+  border-radius: 0;
+}
+
+*:hover {
+  outline: none;
+  border: none;
+}
+
+*.focus {
+  outline: none;
+  border: none;
+}
+
+*.active {
+  outline: none;
+  border: none;
+}
+
+.card-img-top img{
+  width: 200px;
+  margin: auto auto;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+  outline: none;
+  border: none;
+}
+
+.card:focus {
+  transform: scale(1.05);
+  outline: none;
+  border: none;
+}
+
+.card:active {
+  transform: scale(1.05);
+  outline: none;
+  border: none;
+}
+
+
+
+div.text {
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  color: white;
+  bottom: 0;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.9) 50%);
+}
+
+.text p {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  margin: 0;
+}
+
+

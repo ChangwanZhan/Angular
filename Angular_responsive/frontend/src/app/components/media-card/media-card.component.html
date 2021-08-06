@@ -1,0 +1,20 @@
+<div class="media-card">
+  <div class="card"
+       style="border: 0; background-color: transparent; margin: auto;"
+       [style.width]="isMobile ? '90%' : '100%'"
+       (mouseover)="display=true"
+       (mouseout)="display=false"
+  >
+    <a href="watch/{{media.media_type}}/{{media.id}}" target="_self" class="stretched-link">
+      <img class="card-img-top" [src]="media.poster_path">
+      <div class="text" *ngIf="display || isMobile"
+           [style.font-size]="isMobile ? '13px' : '20px'"
+           [style.text-align]="isMobile ? 'left' : 'center'"
+      >
+        <p>
+          {{media.name}}
+        </p>
+      </div>
+    </a>
+  </div>
+</div>

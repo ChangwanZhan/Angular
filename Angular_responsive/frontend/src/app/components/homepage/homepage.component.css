@@ -1,0 +1,157 @@
+body {
+  background-color: #040f38;
+}
+
+ngb-carousel {
+  width: 1250px;
+  height: 420px;
+  margin: 20px auto;
+}
+
+
+::ng-deep ngb-carousel:active {
+  outline: none;
+}
+
+::ng-deep ngb-carousel:focus {
+  outline: none;
+}
+
+/*a.carousel-control-prev {*/
+/*  width: 20px !important;*/
+/*  height: 20px !important;*/
+/*  margin: auto 19px !important;*/
+/*}*/
+
+/*a.carousel-control-next {*/
+/*  width: 20px;*/
+/*  height: 20px;*/
+/*  margin: auto 19px;*/
+/*}*/
+
+a.carousel-control-prev{
+  width: 40px !important;
+  height: 40px !important;
+  margin: auto auto!important;
+  /*margin: auto 19px;*/
+}
+
+/*::ng-deep span.carousel-control-next {*/
+/*  width: 5%;*/
+/*  height: 5%;*/
+/*  margin: auto auto;*/
+/*}*/
+
+/*.carousel-control-prev-icon,*/
+/*.carousel-control-next-icon {*/
+/*  width: 40px;*/
+/*  height: 40px;*/
+/*}*/
+
+/*.carousel-control-prev-icon,*/
+/*.carousel-control-next-icon {*/
+/*  height: 100px;*/
+/*  width: 100px;*/
+/*  outline: black;*/
+/*  background-size: 100%, 100%;*/
+/*  border-radius: 50%;*/
+/*  border: 1px solid black;*/
+/*  background-image: none;*/
+/*}*/
+
+/*.carousel-control-next-icon:after*/
+/*{*/
+/*  content: '>';*/
+/*  font-size: 55px;*/
+/*  color: red;*/
+/*}*/
+
+/*.carousel-control-prev-icon:after {*/
+/*  content: '<';*/
+/*  font-size: 55px;*/
+/*  color: red;*/
+/*}*/
+
+/*a.picsum-img-wrapper #main-img{*/
+/*  width: 5%;*/
+/*  height: 5%;*/
+/*  margin: auto auto;*/
+/*}*/
+
+::ng-deep a.carousel-control-prev {
+  width: 20px;
+  height: 20px;
+  margin: auto 20px;
+  /*margin: auto 19px;*/
+}
+
+::ng-deep a.carousel-control-next {
+  width: 20px;
+  height: 20px;
+  margin: auto 20px;
+}
+
+
+
+div.picsum-img-wrapper  {
+  max-height: 420px;
+  max-width: 1250px;
+  overflow: hidden;
+  margin: auto auto;
+}
+
+.picsum-img-wrapper img{
+  width: 1250px;
+}
+
+.picsum-img-wrapper:hover img{
+  transform: scale(1.05);
+}
+
+
+.picsum-img-wrapper:hover .carousel-caption{
+  display: block;
+}
+
+:host.carousel-indicators #homepage{
+  margin: 0;
+  width: 100%;
+}
+
+.carousel-caption{
+  display: none;
+}
+
+div.carousel-caption {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.9) 55%);
+  width:1250px;
+  height: 170px;
+  position: absolute;
+  top: 250px;
+  left: 0;
+}
+
+.carousel-caption p{
+  position: absolute;
+  top: 110px;
+  left: 70px;
+  font-size: 17px;
+}
+
+div.mobile-carousel-caption {
+  width: 100%;
+  height: 10%;
+  font-size: 13px;
+  position: absolute;
+  color: white;
+  bottom: 0;
+  text-align: left;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.9) 70%);
+}
+
+.mobile-carousel-caption p {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  margin: 0;
+}

@@ -1,0 +1,70 @@
+<div class="my-modal">
+<!--  <button class="invisible-button" style="display: none"></button>-->
+  <div class="container-fluid" id="modal">
+    <div class="modal-header" style="padding: 15px">
+      <h3 class="modal-title">{{castInfo.name}}</h3>
+        <span aria-hidden="true" (click)="activeModal.dismiss('Cross click')">&times;</span>
+    </div>
+    <div class="modal-body" style="padding: 15px">
+      <div class="row">
+        <div class="col-lg-3" style="padding: 0">
+          <img src="{{profilePath}}" style="width: 100%">
+        </div>
+        <div class="col-lg-9"
+             [style.padding-left]="isMobile ? '0' : '30px'"
+             [style.color]="isMobile ? 'black' : '#8f8f8f'"
+        >
+          <p [style.display]="castInfo.birthday=='' ? 'none' : 'block'">Birth: {{castInfo.birthday}}</p>
+          <p [style.display]="castInfo.place_of_birth=='' ? 'none' : 'block'">Birth Place: {{castInfo.place_of_birth}}</p>
+          <p [style.display]="castInfo.gender=='' ? 'none' : 'block'">Gender: {{castInfo.gender}}</p>
+          <p id="homepage" [style.display]="castInfo.homepage=='' ? 'none' : 'block'">Website: <a href="{{castInfo.homepage}}" target="_blank"> {{castInfo.homepage}} </a></p>
+          <p [style.display]="castInfo.known_for_department=='' ? 'none' : 'block'">Known for: {{castInfo.known_for_department}}</p>
+          <p [style.display]="castInfo.also_known_as=='' ? 'none' : 'block'">Also Known as: {{castInfo.also_known_as}}</p>
+          <p style="line-height: 70px" id="social-icons">
+            <a class="fa fa-imdb"
+               target="_blank"
+               id="cast-imdb"
+               href="{{castIds.imdb_id}}"
+               ngbPopover="Visit IMDB"
+               triggers="mouseenter:mouseleave"
+               popoverClass="my-custom-class"
+            >
+            </a>
+            <a class="fa fa-instagram"
+               target="_blank"
+               id="cast-ins"
+               href="{{castIds.instagram_id}}"
+               ngbPopover="Visit Instagram"
+               triggers="mouseenter:mouseleave"
+               popoverClass="my-custom-class"
+            >
+            </a>
+            <a class="fa fa-facebook-square"
+               target="_blank"
+               id="cast-fb"
+               href="{{castIds.facebook_id}}"
+               ngbPopover="Visit Facebook"
+               triggers="mouseenter:mouseleave"
+               popoverClass="my-custom-class"
+            >
+            </a>
+            <a class="fa fa-twitter"
+               target="_blank"
+               id="cast-twitter"
+               href="{{castIds.twitter_id}}"
+               ngbPopover="Visit Twitter"
+               triggers="mouseenter:mouseleave"
+               popoverClass="my-custom-class"
+            >
+            </a>
+          </p>
+        </div>
+      </div>
+        <h3 class="modal-title">Biography</h3>
+        <p
+          [style.color]="isMobile ? 'black' : '#8f8f8f'"
+        > {{castInfo.biography}} </p>
+
+    </div>
+  </div>
+</div>

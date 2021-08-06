@@ -1,0 +1,279 @@
+body {
+  background-color: #040f38;
+  margin: 0;
+  color: #b0b0b0;
+}
+
+
+div.row {
+  margin: 0;
+}
+
+div.detail-container {
+  margin: auto;
+  overflow-y: scroll;
+  max-height: calc(100vh - 20px);
+  max-width: 1400px;
+}
+
+:host.detail-container h2{
+  font-size: 37px;
+}
+
+
+div.detail-container::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+
+.intro h1 {
+  font-size: 45px;
+  color: white;
+}
+
+#detail {
+  margin-top: 3%;
+}
+
+div.embed-responsive.embed-responsive-16by9 {
+  max-height: 440px;
+  max-width: 790px;
+  margin: auto;
+}
+
+.col-lg-8 {
+  max-height: 440px;
+  padding: 0;
+}
+
+.col-lg-4 {
+  padding: 0;
+  max-height: 440px;
+}
+
+h1 {
+  margin-bottom: 3px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p {
+  margin: 0;
+  line-height: 28px;
+}
+
+p.tagline {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 30px;
+  margin-bottom: 10px;
+  font-size: 23px;
+  font-weight: normal;
+  font-style:oblique;
+  color:lightgray;
+}
+
+p.numbers {
+  line-height: 50px;
+  font-size: 23px;
+  color: lightgray;
+}
+
+b {
+  color: white;
+  font-weight: normal;
+}
+
+#watchlist-button{
+  background-color: #3480e3;
+  color: white;
+  border: None;
+  padding: 5px 15px;
+  /*height: 40px;*/
+  /*width: 200px;*/
+  font-size: 22px;
+  border-radius: 3px;
+  /*margin-top: 30px;*/
+}
+
+div.details {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+
+h5 {
+  /*margin-top: 1%;*/
+  color: white;
+  line-height: 60px;
+  margin: 0;
+}
+
+.fa-twitter {
+  color: #00acee;
+  font-size: 30px;
+}
+
+.fa-twitter:hover {
+  color: #00acee;
+  text-decoration: none;
+}
+
+.fa-twitter:active {
+  color: #12bdff;
+  text-decoration: none;
+}
+
+.fa-facebook-square {
+  margin-left: 8px;
+  color: blue;
+  font-size: 30px;
+}
+
+.fa-facebook-square:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+.fa-facebook-square:active {
+  color: #0072de;
+  text-decoration: none;
+}
+
+div.cast-list {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+h2 {
+  color: white;
+  line-height: 60px;
+  font-size: 45px;
+  margin-top: 15px;
+}
+
+#character {
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cast-list p {
+  color: gray;
+  line-height: 22px;
+  margin: 0;
+}
+
+div.card {
+  width: 190px;
+  border: None;
+  border-collapse: collapse;
+  border-radius: 10px;
+  margin: 2px;
+}
+
+.card-img-top {
+  /*height: 100%;*/
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding:10px;
+}
+
+.review-content {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+b.review-title {
+  color: #6c7887;
+  margin-left: 10px;
+}
+
+img.avatar-img {
+  border-radius: 50%;
+  width: 90px;
+  /*margin: auto;*/
+}
+
+div.review-info {
+  display: inline-block;
+  float: left;
+}
+
+p.review-info {
+  display: inline-block;
+  float: left;
+}
+
+.review h3 {
+  color: black;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+div.rate {
+  color: white;
+  background-color: black;
+  border-radius: 25% / 50%;
+  font-size: 20px;
+  margin: auto 20px;
+  height: 30px;
+  width: 50px;
+  text-align: center;
+  line-height: 25px;
+  /*padding-bottom: 5px;*/
+  padding: 2px;
+}
+
+.rate p {
+  line-height: 25px;
+}
+
+.review h5 {
+  color: #b0b0b0;
+  line-height: 30px;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.review p {
+  color: gray;
+  line-height: 22px;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.review a {
+  text-decoration-line: underline;
+  color: #4538ff;
+}
+
+
+/*::ng-deep .card-img-top img{*/
+/*  width: 180px;*/
+/*  margin: auto auto;*/
+/*}*/
+
+
+/*::ng-deep img.detail-container  {*/
+/*  width: 150px;*/
+/*}*/
+

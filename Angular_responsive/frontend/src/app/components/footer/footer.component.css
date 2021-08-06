@@ -1,0 +1,13 @@
+div.footer {
+  background-color: #010d2e;
+  color: #6c7887;
+  text-align: center;
+  height: 20px;
+}
+
+.footer p {
+  line-height: 20px;
+  font-size: 13px;
+}
+
+

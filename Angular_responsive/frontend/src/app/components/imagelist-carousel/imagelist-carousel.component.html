@@ -1,0 +1,23 @@
+<div class="image-list">
+  <ngb-carousel #carousel [showNavigationIndicators]="!isMobile" [style.display]="isMobile ? 'none' : 'block'" interval="false" class="img-list">
+    <ng-template ngbSlide *ngFor="let group of mediaGroups">
+      <div class="row flex-row flex-nowrap">
+          <div class="col-2" *ngFor="let media of group">
+            <app-media-card [isMobile]="isMobile" [media]=media>
+            </app-media-card>
+          </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+
+  <ngb-carousel [showNavigationIndicators]="!isMobile" *ngIf="isMobile" [style.display]="isMobile ? 'block' : 'none'" interval="false" style="width: 75%;" class="img-list">
+    <ng-template ngbSlide *ngFor="let group of mediaGroupsMobile">
+      <div class="row flex-row flex-nowrap" style="align-items: center; justify-content: center;">
+        <div class="col" *ngFor="let media of group">
+          <app-media-card [isMobile]="isMobile" [media]=media>
+          </app-media-card>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>

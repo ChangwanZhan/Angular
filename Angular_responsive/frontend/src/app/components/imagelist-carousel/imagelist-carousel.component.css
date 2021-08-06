@@ -1,0 +1,81 @@
+ngb-carousel {
+  /*max-width: 1320px;*/
+  width: 95%;
+  /*height: 380px;*/
+  margin: auto auto;
+  padding: 0;
+}
+
+:host::ng-deep.carousel-indicators {
+  position: absolute;
+  bottom: -70px;
+}
+
+/*.carousel-indicators {*/
+/*  margin: 0;*/
+/*  width: 100%;*/
+/*}*/
+
+/*div.carousel-caption {*/
+/*  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.9) 50%);*/
+/*  width:200px;*/
+/*  height: 160px;*/
+/*  position: relative;*/
+/*  !*margin-top: -20%;*!*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  padding: 10px;*/
+/*}*/
+
+/*.carousel-caption span{*/
+/*  width: 200px;*/
+/*  text-align: center;*/
+/*  align-self: flex-end;*/
+/*  font-size: 20px;*/
+
+/*}*/
+
+/*div.carousel-inner {*/
+/*  margin: auto;*/
+/*}*/
+
+
+:host::ng-deep a.carousel-control-prev {
+  width: 20px;
+  height: 20px;
+  margin: auto -20px;
+  /*margin: auto 19px;*/
+}
+
+:host::ng-deep a.carousel-control-next {
+  width: 20px;
+  height: 20px;
+  margin: auto -20px;
+}
+
+/*a.carousel-item{*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    margin: auto -20px;*/
+/*}*/
+
+
+::ng-deep .carousel-inner {
+  margin: auto;
+}
+/*::ng-deep .carousel-indicators {*/
+/*  display: none;*/
+/*}*/
+
+
+::ng-deep ngb-carousel:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+::ng-deep ngb-carousel:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}

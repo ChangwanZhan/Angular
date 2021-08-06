@@ -1,0 +1,7 @@
+<div style="padding: 15px; margin-top: 50px; "
+     [style.display]="similarMedias.length==0 ? 'none' : 'block'"
+>
+  <h1 *ngIf="!isMobile" style="margin-bottom: 30px">{{title}}</h1>
+  <h2 *ngIf="isMobile" style="text-align: center;font-size: 30px">{{title}}</h2>
+  <app-imagelist-carousel [mediaGroups]="mediaGroups" [mediaGroupsMobile]="mediaGroupsMobile" [isMobile]="isMobile" > </app-imagelist-carousel>
+</div>

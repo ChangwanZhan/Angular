@@ -1,0 +1,27 @@
+
+div {
+  max-width: 1350px;
+  color: white;
+  margin: auto auto;
+}
+
+/*h1 {*/
+/*  margin-left: 5%;*/
+/*}*/
+
+h2 {
+  color: white;
+  margin: 0;
+}
+
+div.card-container {
+  width: 200px;
+  float: left;
+  margin: 40px 10px;
+  /*display: inline-block;*/
+}
+
+div.watch-list {
+  overflow-y: scroll;
+  max-height: calc(100vh - 20px);
+}

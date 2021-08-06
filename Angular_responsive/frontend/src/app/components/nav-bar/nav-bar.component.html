@@ -1,0 +1,43 @@
+<div class="my-navbar"
+  [style.line-height]="isMobile ? '40px' : '60px'">
+
+  <nav style="display: block">
+    <a routerLink="/" class="title" id="uscFilms"
+             [style.font-size]="isMobile ? '17px' : '24px'"
+    >USC Films</a>
+    <a routerLink="/" id="home" class="web"
+       [style.display]="isMobile ? 'None' : 'inline-block'"
+    >Home</a>
+    <a routerLink="/mylist" id="myList" class="web"
+       [style.display]="isMobile ? 'None' : 'inline-block'"
+    >My List</a>
+  </nav>
+
+  <button class="fa fa-bars" [style.display]="isMobile ? 'inline-block' : 'None'" id="menuButton" (click)="toggleMenu()"></button>
+  <div class="dropdown-content" *ngIf="isMobile && openMenu">
+    <div class="mobile" style="margin-top: 40px">
+      <a routerLink="/" id="mobile-home" *ngIf="openMenu" (click)="openMenu=false"
+      >Home</a>
+    </div>
+    <div class="mobile">
+      <a routerLink="/mylist" id="mobile-mylist" *ngIf="openMenu" (click)="openMenu=false"
+      >My List</a>
+    </div>
+  </div>
+
+
+  <ng-template #rt let-r="result" let-t="term" class="search">
+    <img [src]="r.backdrop_path" class="mr-1" style="width: 80px">
+    <ngb-highlight [result]="r.name" [term]="t"></ngb-highlight>
+  </ng-template>
+
+
+  <div class="search" [style.display]="!isMobile || (isMobile && openMenu)? 'inline-block' : 'None'"
+       [style.float]="isMobile? 'left': 'right'"
+       id="search-bar">
+    <input id="typeahead-http" type="text" [(ngModel)]="model" [ngbTypeahead]="search" [resultTemplate]="rt" [inputFormatter]="formatter" (selectItem)="selectedItem($event)" placeholder="Search" />
+  </div>
+
+</div>
+
+

@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  background-color: #040f38;
+  height: 100%;
+  width: 100%;
+}
+
+.myCustomModalClass .modal-dialog {
+  max-width: 900px;
+  width: 95%;
+}
+
+div.page-container {
+  padding: 2%;
+  overflow-y: scroll;
+  max-height: calc(100vh - 20px);
+}
+
+div.row {
+  margin: 0;
+}
